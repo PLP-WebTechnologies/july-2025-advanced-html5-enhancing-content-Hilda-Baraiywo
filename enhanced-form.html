@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML5 Content & Forms</h1>
+    </header>  
+
+
+    <section>
+        <h2>📋 Structured Content with List</h2>
+        <h3>Web Development Skills</h3>
+        <h4>Frontend Technologies</h4>
+
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript & ES6+</li>
+            <li>React & Vue.js</li>
+        </ul>
+
+        <h4>Backend Technologies</h4>
+        <ol>
+            <li>Node.js & Express</li>
+            <li>Python & Django</li>
+            <li>Database Management</li>
+            <li>API Development</li>
+            <li>Server Configuration</li>
+        </ol>
+    </section>
+
+    <!-- Tables Section -->
+     <section>
+        <h2>📊 Structured Data with Tables</h2>
+        <h3>Web Hosting Plans Comparison</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Storage</th>
+                    <th>Bandwidth</th>
+                    <th>Domains</th>
+                    <th>Price/Month</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Basic</strong></td>
+                    <td>10 GB SSD</td>
+                    <td>100 GB</td>
+                    <td>1</td>
+                    <td><strong>$4.99</strong></td>
+                    <td>★★★☆☆</td>
+                </tr>
+                <tr>
+                    <td><strong>Professional</strong></td>
+                    <td>50 GB SSD</td>
+                    <td>500 GB</td>
+                    <td>5</td>
+                    <td><strong>$9.99</strong></td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td><strong>Business</strong></td>
+                    <td>200 GB SSD</td>
+                    <td>Unlimited</td>
+                    <td>Unlimited</td>
+                    <td><strong>$19.99</strong></td>
+                    <td>★★★★★</td>
+                </tr>
+                <tr>
+                    <td><strong>Enterprise</strong></td>
+                    <td>500 GB SSD</td>
+                    <td>Unlimited</td>
+                    <td>Unlimited</td>
+                    <td><strong>$39.99</strong></td>
+                    <td>★★★★★</td>
+                </tr>
+            </tbody>
+        </table>
+     </section>
+
+     <!-- Media Section -->
+      <section>
+        <h2>🎯 Rich Media Content</h2>
+        
+        <article>
+            <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=300&fit=crop" alt="Web Development Workspace" width="400" height="300">
+            <h4>Modern Web Development</h4>
+            <p>Creating responsive, accessible websites with the latest HTML5 and CSS3 technologies.</p>
+        </article>
+        
+        <article>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" alt="Code Editor" width="400" height="300">
+            <h4>Clean Code Practices</h4>
+            <p>Writing maintainable, semantic HTML with proper structure and accessibility in mind.</p>
+        </article>
+        
+        <article>
+            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400&h=300&fit=crop" alt="Mobile Development" width="400" height="300">
+            <h4>Mobile-First Design</h4>
+            <p>Building responsive forms and layouts that work seamlessly across all devices.</p>
+        </article>
+    </section>
+
+    <!-- Forms Section -->
+    <section>
+        <h2>📝 Advanced HTML5 Form with Validation</h2>
+        
+        <form action="#" method="POST" novalidate>
+            
+            <!-- Personal Information Fieldset -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div>
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" 
+                           required minlength="2" maxlength="50"
+                           placeholder="Enter your first name"
+                           autocomplete="given-name">
+                </div>
+                
+                <div>
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" 
+                           required minlength="2" maxlength="50"
+                           placeholder="Enter your last name"
+                           autocomplete="family-name">
+                </div>
+                
+                <div>
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" 
+                           required placeholder="your.email@domain.com"
+                           autocomplete="email">
+                </div>
+                
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                           placeholder="123-456-7890"
+                           autocomplete="tel">
+                </div>
+                
+                <div>
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate" name="birthdate"
+                           min="1900-01-01" max="2023-12-31"
+                           autocomplete="bday">
+                </div>
+                
+                <div>
+                    <label for="website">Personal Website</label>
+                    <input type="url" id="website" name="website"
+                           placeholder="https://yourwebsite.com"
+                           autocomplete="url">
+                </div>
+            </fieldset>
+
+            <!-- Professional Information -->
+            <fieldset>
+                <legend>Professional Details</legend>
+                
+                <div>
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company"
+                           placeholder="Your company name"
+                           autocomplete="organization">
+                </div>
+                
+                <div>
+                    <label for="position">Job Title</label>
+                    <input type="text" id="position" name="position"
+                           placeholder="Your job title"
+                           autocomplete="organization-title">
+                </div>
+                
+                <div>
+                    <label for="experience">Years of Experience</label>
+                    <input type="number" id="experience" name="experience"
+                           min="0" max="50" step="1"
+                           placeholder="5">
+                </div>
+                
+                <div>
+                    <label for="salary">Expected Salary Range</label>
+                    <select id="salary" name="salary" required>
+                        <option value="">Select salary range</option>
+                        <option value="30000-50000">$30,000 - $50,000</option>
+                        <option value="50000-75000">$50,000 - $75,000</option>
+                        <option value="75000-100000">$75,000 - $100,000</option>
+                        <option value="100000+">$100,000+</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label>Technical Skills *</label>
+                    <div>
+                        <input type="checkbox" id="html" name="skills[]" value="html" required>
+                        <label for="html">HTML5</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="css" name="skills[]" value="css">
+                        <label for="css">CSS3</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="js" name="skills[]" value="javascript">
+                        <label for="js">JavaScript</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="react" name="skills[]" value="react">
+                        <label for="react">React</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="node" name="skills[]" value="nodejs">
+                        <label for="node">Node.js</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <label>Preferred Work Type *</label>
+                    <div>
+                        <input type="radio" id="remote" name="workType" value="remote" required>
+                        <label for="remote">Remote</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="onsite" name="workType" value="onsite">
+                        <label for="onsite">On-site</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hybrid" name="workType" value="hybrid">
+                        <label for="hybrid">Hybrid</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Project Details -->
+            <fieldset>
+                <legend>Project Information</legend>
+                
+                <div>
+                    <label for="projectType">Project Type</label>
+                    <select id="projectType" name="projectType">
+                        <option value="">Choose project type</option>
+                        <option value="website">Website Development</option>
+                        <option value="webapp">Web Application</option>
+                        <option value="ecommerce">E-commerce Site</option>
+                        <option value="portfolio">Portfolio Site</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="budget">Project Budget</label>
+                    <input type="range" id="budget" name="budget"
+                           min="1000" max="50000" step="1000" value="10000"
+                           oninput="document.getElementById('budgetValue').textContent = '$' + this.value">
+                    <div>Budget: <span id="budgetValue">$10000</span></div>
+                </div>
+                
+                <div>
+                    <label for="timeline">Project Timeline</label>
+                    <input type="month" id="timeline" name="timeline">
+                </div>
+                
+                <div>
+                    <label for="description">Project Description *</label>
+                    <textarea id="description" name="description" rows="6" 
+                              required minlength="50" maxlength="1000"
+                              placeholder="Please describe your project requirements, goals, and any specific features you need..."></textarea>
+                </div>
+                
+                <div>
+                    <label for="portfolio">Portfolio File (PDF only)</label>
+                    <input type="file" id="portfolio" name="portfolio"
+                           accept=".pdf" readonly>
+                </div>
+            </fieldset>
+
+            <!-- Additional Options -->
+            <fieldset>
+                <legend>Additional Options</legend>
+                
+                <div>
+                    <label for="color">Preferred Theme Color</label>
+                    <input type="color" id="color" name="color" value="#667eea">
+                </div>
+                
+                <div>
+                    <label for="urgency">Project Urgency (1-10)</label>
+                    <input type="range" id="urgency" name="urgency"
+                           min="1" max="10" step="1" value="5"
+                           oninput="document.getElementById('urgencyValue').textContent = this.value">
+                    <div>Urgency Level: <span id="urgencyValue">5</span></div>
+                </div>
+                
+                <div>
+                    <label for="keywords">Project Keywords</label>
+                    <input type="search" id="keywords" name="keywords"
+                           placeholder="Enter keywords separated by commas">
+                </div>
+            </fieldset>
+
+            <!-- Form Notes -->
+            <p><strong>Note:</strong> All fields marked with (*) are required. 
+            The form uses native HTML5 validation</p>
+
+            <!-- Submit Buttons -->
+            <div>
+                <button type="submit">Submit Application</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </section> 
+</body>
+
+
+</html>
